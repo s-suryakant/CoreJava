@@ -1,0 +1,49 @@
+> start()
+    >> used to establish & begin the execution of thread.
+
+> run()
+    >> used to begin the execution of thread.
+
+> currentThread()
+    >> returns a reference to the currently executing thread object.
+
+> getName()
+    >> used to get the name of the entity, and that entity can be class, interface, array, enum, method, etc. of the class object.
+    Prototype: public final String getName()
+
+> setName(String name)
+    >> used to change the name of a thread
+    Prototype: public final void setName(String name)
+
+> getPriority()
+    >> used to check the priority of the thread
+    Prototype: public final int getPriority()
+
+> setPriority(int p)
+    >> used to set priority
+    Prototype: public final void setPriority(int p)
+               p range: 1(high)-10(low)
+
+    >> constants from Thread class
+     public static int MIN_PRIORITY - 10
+     public static int MAX_PRIORITY - 1
+     public static int NORM_PRIORITY - 5
+
+> yield()
+    >> used when a thread wants to pass its execution to give chance to remaining threads of the same priority
+    Prototype: public static native void yield()
+
+> join()
+    >> used when a thread wants to wait until completion of some other thread
+    Prototype: public final void join() throws InterruptedException
+               public final void join(long ms) throws InterruptedException
+               public final void join(long ms, int ns) throws InterruptedException
+
+> sleep()
+    >> used when a thread does not want to perform any operation for a particular amount of time
+    Prototype: public static native void sleep(long ms) throws InterruptedException
+               public static void sleep(long ms, int ns) throws InterruptedException
+
+> interrupt()
+    >> used to interrupt a sleeping or waiting thread.
+    Prototype: public void interrupt()
