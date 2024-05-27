@@ -1,4 +1,5 @@
 package ReentrantLockDemo;
+
 import java.util.concurrent.locks.*;
 
 public class ReentrantLockDemo {
@@ -12,6 +13,18 @@ public class ReentrantLockDemo {
 
         System.out.println(l.isLocked());
         System.out.println(l.isHeldByCurrentThread());
-        System.out.println(l.is);
+        System.out.println(l.getQueueLength());
+
+        l.unlock();
+
+        System.out.println(l.getHoldCount());
+        System.out.println(l.isLocked());
+
+        l.unlock();
+
+        System.out.println(l.isLocked());
+        System.out.println(l.isFair());
+
     }
+
 }
