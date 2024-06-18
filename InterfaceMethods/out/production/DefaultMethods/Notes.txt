@@ -1,0 +1,3 @@
+> To declare default methods "default" keyword is used.
+> Default methods can be overridden.
+>
