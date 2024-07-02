@@ -1,0 +1,13 @@
+** Default Method inside Interface:
+
+> Also known as Defender Methods or Virtual Extension Methods.
+> To declare default methods "default" keyword is used.
+> Default methods can be overridden.
+> Cannot be used to override Object class methods.
+
+** Static Methods inside Interface
+
+> Used to define geneal utility methods.
+> Interface static method by default not available to implementation class.
+> Can only be called using Interface name like -- interf.method().
+> Overriding concepts not applicable to interface static methods.

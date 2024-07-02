@@ -1,0 +1,12 @@
+**  Syntax for Method Reference:
+    >>  Static methods
+        ClassName :: methodName
+    >>  Instance methods
+        ObjectReference :: methodName
+
+> Alternative to lambda expression.
+> Code reusability.
+> Argument types must be same for referring.
+
+**  Constructor Reference:
+    >>  ClassName :: new
