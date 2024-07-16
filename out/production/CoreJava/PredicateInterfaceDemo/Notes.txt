@@ -1,0 +1,22 @@
+**  Prototype:
+    interface Predicate<T>{
+        boolean test(T t)
+    }
+
+import java.util.function.Predicate;
+
+> Predicate joining
+    >> can be done using default methods of Predicate(I) -- negate(), or(), and().
+       p1.negate()
+       p1.or(p2)
+       p1.and(p2)
+
+**  Methods prototype:
+
+    default Predicate<T> and(Predicate<? super T> other)
+    default Predicate<T> or(Predicate<? super T> other)
+    default Predicate<T> negate()
+
+    static <T> Predicate<T> isEqual(Object targetRef)
+        >> Returns a predicate that tests if two arguments are equal according to Objects.equals(Object, Object).
+        >> For custom types one needs to override equals() method.

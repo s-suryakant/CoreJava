@@ -1,0 +1,22 @@
+**  Prototype:
+    interface Function<T,R>
+    {
+        R apply(T t);
+    }
+import java.util.function.Function;
+
+> Function chaining
+    >> We can combine multiple functions together to form more complex functions.For this Function interface defines the following 2 default methods
+       f1.andThen(f2);
+       f1.compose(f2);
+
+**  Methods prototype:
+
+    default <V> Function<T,V> andThen(Function<? super R,? extends V> after)
+        >> Returns a composed function that first applies this function to its input, and then applies the after function to the result.
+
+    default <V> Function<V,R> compose(Function<? super V,? extends T> before)
+        >> Returns a composed function that first applies this function to its input, and then applies the after function to the result.
+
+    static <T> Function<T,T> identity()
+        >> Returns a function that always returns its input argument.

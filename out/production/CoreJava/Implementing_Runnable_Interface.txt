@@ -1,0 +1,4 @@
+Defining a thread by Implementing Runnable Interface:
+
+    > Runnable Interface present in java.lang package & it contains only one method - run() method.
+    

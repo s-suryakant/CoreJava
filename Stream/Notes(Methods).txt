@@ -1,0 +1,60 @@
+**  stream()
+    >> The stream() method is a default method defined in the Collection interface.
+    >> It returns a sequential Stream with the collection as its source.
+
+> filter()
+    >> Used to filter elements from the collection based on some boolean condition.
+    >> Prototype:
+        Stream<T> filter(Predicate<? super T> predicate)
+
+> map()
+    >> Used to apply a given function to each element of the stream, transforming the elements into a new stream of elements.
+       The map() method is often used for converting or transforming data from one form to another.
+    >> Prototype:
+        <R> Stream<R> map(Function<? super T,? extends R> mapper)
+
+> collect()
+    >> Used to collect the elements from the Stream & adding to the specified collection.
+    >> Prototype:
+        <R,A> R collect(Collector<? super T,A,R> collector)
+
+> count()
+    >> Returns the number of elements present in stream.
+    >> Prototype:
+        public long count()
+
+> sorted()
+    >> Used to sort elements inside stream.
+    >> Prototype:
+        Stream<T> sorted()
+    >> Eg --
+        l.stream().sorted()...  >>> used for default sorting
+        l.stream().sorted(Comparator c)...  >>> used for custom sorting
+
+> min(Comparator c)
+    >> returns minimum value according to specified Comparator
+    >> Prototype:
+        Optional<T> min(Comparator<? super T> comparator)
+
+> max(Comparator c)
+    >> returns maximum value according to specified Comparator
+    >> Prototype:
+        Optional<T> max(Comparator<? super T> comparator)
+
+> forEach()
+    >> Used to apply any Lambda expression for each element in stream.
+    >> Prototype:
+        void forEach(Consumer<? super T> action)
+
+> toArray()
+    >> Returns an array containing the elements of this stream.
+    >> Prototype:
+        Object[] toArray()
+
+> of()
+    >> Used to apply stream for a group of values & for arrays.
+    >> Prototype:
+        static <T> Stream<T> of(T... values)
+    >> Eg --
+        Stream<Integer> s = Stream.of(1,11,111,1111);
+        Stream<Double> s = Stream.of(d);    //d is an array of double objects
