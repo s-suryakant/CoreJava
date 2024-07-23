@@ -1,7 +1,0 @@
-**  Prototype:
-    interface Supplier<R>
-    {
-        R get();
-    }
-
-> Does not contain any static & default methods
