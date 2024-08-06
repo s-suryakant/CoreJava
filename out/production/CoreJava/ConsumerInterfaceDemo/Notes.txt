@@ -1,9 +1,0 @@
-** Prototype:
-   interface Consumer<T>
-   {
-        public void accept(T t);
-   }
-import java.util.function.Consumer;
-
-> Consumer chaining
-    >> default Consumer<T> andThen(Consumer<? super T> after)
