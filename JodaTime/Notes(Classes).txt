@@ -13,6 +13,14 @@
         > Year is an immutable date-time object that represents a year. Any field that can be derived from a year can be obtained.
         > This class is immutable and thread-safe.
 
+    >> ZoneId
+        > ZoneId specifies a time zone identifier and provides rules for converting between an Instant and a LocalDateTime.
+
+    >> ZonedDateTime
+        > ZonedDateTime is an immutable representation of a date-time with a time-zone.
+        > This class stores all date and time fields, to a precision of nanoseconds, and a time-zone, with a zone offset
+          used to handle ambiguous local date-times.
+
     >> Instant – represents an exact point in time in milliseconds from the Java epoch of 1970-01-01T00:00:00Z
 
     >> Duration – represents the duration in milliseconds between 2 points in time
